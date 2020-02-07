@@ -86,7 +86,7 @@ impl Object {
         let status = c::pv_porcupine_multiple_keywords_init(
             _model_file_path,
             _number_keywords,
-            _keyword_file_paths.as_ptr() as *const *const i8,
+            _keyword_file_paths.as_ptr() as *const *const u8,
             sensitivities.as_ptr(),
             &mut _object,
         );
